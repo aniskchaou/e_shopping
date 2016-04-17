@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">E-shopping</string>
+    <string name="title_activity_maps">E-shopping</string>
+    <string name="title_activity_ajouter_produit">AjouterProduit</string>
+    <string name="title_activity_recherche_produit">RechercheProduit</string>
+    <string name="title_activity_listes_produit">ListesProduit</string>
+    <string name="title_activity_inscription">Inscription</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_information_produit">InformationProduit</string>
+</resources>
