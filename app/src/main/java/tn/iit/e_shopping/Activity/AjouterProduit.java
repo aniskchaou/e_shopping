@@ -93,23 +93,10 @@ public class AjouterProduit extends AppCompatActivity {
         ajouter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-          /* dbh.insertDB(marque.getText().toString(),carateristique.getText().toString(),prix.getText().toString(),adresse.getSelectedItem().toString(),categorie.getText().toString(),"dsf");
-            //   dbh.insertDB("sdf","qsd","sd","qdf","qd","dsf");
-          // Log.e("qd",marque.getText().toString()+""+carateristique.getText().toString()+""+Integer.parseInt(prix.getText().toString())+""+adresse.getText().toString()+""+categorie.getText().toString());
-               StringBuffer sb=new StringBuffer();
-                Cursor cr=dbh.getAllData();
-                while (cr.moveToNext())
-                {
-                  sb.append("id "+cr.getString(0));
-                    sb.append("marque "+cr.getString(1));
-                    sb.append("crarestique "+cr.getString(2));
-                    sb.append("prix "+cr.getString(3));
 
-                }
-           */
                 bg.setVisibility(View.VISIBLE);
                InsertData id=  new InsertData(getApplicationContext());
-               Toast.makeText(getApplicationContext(),marque.getText().toString()+""+carateristique.getText().toString()+""+prix.getText().toString()+""+adresse.getSelectedItem().toString()+""+categorie.getText().toString(),Toast.LENGTH_LONG).show();
+              // Toast.makeText(getApplicationContext(),marque.getText().toString()+""+carateristique.getText().toString()+""+prix.getText().toString()+""+adresse.getSelectedItem().toString()+""+categorie.getText().toString(),Toast.LENGTH_LONG).show();
              String texte=marque.getText().toString() + "/"+prix.getText().toString() + "/"+carateristique.getText().toString()+ "/"+adresse.getSelectedItem().toString() + "/"+categorie.getText().toString()+"/";
 
 
@@ -120,9 +107,9 @@ public class AjouterProduit extends AppCompatActivity {
               id.execute(texte);
 
                 bg.setVisibility(View.GONE);
-              Toast.makeText(getApplicationContext(), texte, Toast.LENGTH_SHORT).show();
+             // Toast.makeText(getApplicationContext(), texte, Toast.LENGTH_SHORT).show();
                 Intent in=new Intent(getApplicationContext(),Acceuil.class);
-               // startActivity(in);
+                startActivity(in);
 
 
             }
