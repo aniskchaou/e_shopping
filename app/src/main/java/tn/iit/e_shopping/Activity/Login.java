@@ -40,7 +40,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
      boolean  existe =duh.login(login.getText().toString(),pwd.getText().toString());
         if(existe)
         {
-            Intent intent=new Intent(this,ListesProduit.class);
+            Intent intent=new Intent(this,Acceuil.class);
             startActivity(intent);
         }else
         {

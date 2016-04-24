@@ -10,6 +10,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -53,7 +54,8 @@ public class ListesProduit extends ListActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.man_menu, menu);
+        getMenuInflater().inflate(R.menu.liste_menu, menu);
+
         return true;
     }
 
@@ -72,4 +74,8 @@ public class ListesProduit extends ListActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+
+
+
 }

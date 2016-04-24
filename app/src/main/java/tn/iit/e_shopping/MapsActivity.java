@@ -1,12 +1,10 @@
 package tn.iit.e_shopping;
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.content.Intent;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -16,11 +14,12 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import tn.iit.e_shopping.Activity.Acceuil;
 import tn.iit.e_shopping.Activity.AjouterProduit;
 import tn.iit.e_shopping.Activity.Inscription;
 import tn.iit.e_shopping.Activity.ListesProduit;
 import tn.iit.e_shopping.Activity.Login;
-import tn.iit.e_shopping.database.DataBaseHelper;
+import tn.iit.e_shopping.Activity.RechercheProduit;
 
 public class MapsActivity extends ActionBarActivity implements OnMapReadyCallback {
 
@@ -29,6 +28,7 @@ public class MapsActivity extends ActionBarActivity implements OnMapReadyCallbac
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_maps);
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
@@ -39,8 +39,10 @@ public class MapsActivity extends ActionBarActivity implements OnMapReadyCallbac
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.man_menu, menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.man_menu, menu);
         return true;
+
     }
 
     @Override
@@ -54,14 +56,8 @@ public class MapsActivity extends ActionBarActivity implements OnMapReadyCallbac
                 Intent  in=new Intent(getApplicationContext(), Inscription.class);
                 startActivity(in);
                 return true;
-            case R.id.liste:
-                Intent  iin=new Intent(getApplicationContext(), ListesProduit.class);
-                startActivity(iin);
-                return true;
-            case R.id.ajouter_produit:
-                Intent  iit=new Intent(getApplicationContext(), AjouterProduit.class);
-                startActivity(iit);
-                return true;
+
+
             default:
                 return super.onOptionsItemSelected(item);
         }

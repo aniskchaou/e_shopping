@@ -41,17 +41,15 @@
         android:layout_below="@+id/txt_caracterisque"
         android:layout_alignParentStart="true"
         android:hint="prix"
+        android:layout_marginBottom="30dp"
         android:layout_alignEnd="@+id/editText9" />
-
-    <EditText
-        android:layout_width="wrap_content"
+    <Spinner
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txt_adresse"
-        android:hint="adresse"
+        android:id="@+id/spinner"
         android:layout_below="@+id/txt_prix"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/editText9" />
+        android:layout_alignParentStart="true" />
+
 
 
 
@@ -80,5 +78,13 @@
         android:id="@+id/bt_ajouter"
         android:layout_below="@+id/photo"
         android:layout_alignParentStart="true" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_ajouter"
+        android:layout_above="@+id/categorie"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>

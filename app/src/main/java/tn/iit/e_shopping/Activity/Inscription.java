@@ -47,7 +47,7 @@ public class Inscription extends AppCompatActivity  implements View.OnClickListe
     @Override
     public void onClick(View v) {
         duh.inscription(nom.getText().toString(),prenom.getText().toString(),adresse.getText().toString(),email.getText().toString(),login.getText().toString(),pwd.getText().toString());
-        Intent in=new Intent(getApplicationContext(),ListesProduit.class);
+        Intent in=new Intent(getApplicationContext(),Acceuil.class);
         startActivity(in);
     }
 }

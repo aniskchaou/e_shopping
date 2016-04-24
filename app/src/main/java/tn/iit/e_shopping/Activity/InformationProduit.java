@@ -37,11 +37,11 @@ public class InformationProduit extends AppCompatActivity {
         Cursor cr=dbh.getByName(data);
         cr.moveToFirst();
 
-            marque.setText("marque : " + sb.append(cr.getString(1)));
-            carateristique.setText("caracteristique : " + sb.append(cr.getString(2)));
-            prix.setText("prix : " + sb.append(cr.getString(3)));
-            adresse.setText("adresse : " +sb.append(cr.getString(4)));
-            categorie.setText("categorie : " +sb.append( cr.getString(5)));
+            marque.setText("marque : " + cr.getString(1));
+            carateristique.setText("caracteristique : " + cr.getString(2));
+            prix.setText("prix : " + cr.getString(3));
+            adresse.setText("adresse : " +cr.getString(4));
+            categorie.setText("categorie : " +cr.getString(5));
 
 
     }

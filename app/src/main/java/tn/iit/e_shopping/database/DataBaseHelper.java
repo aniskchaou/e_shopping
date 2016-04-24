@@ -64,4 +64,15 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         return res;
     }
 
+    public Cursor  rechercher(String prix_min,String prix_max,String nomproduit)
+    {
+        SQLiteDatabase   db=this.getWritableDatabase();
+        String req= "select * from "+tablename_name+" where "+this.prix+">'"+prix_min+"' and "+this.prix+"< '"+prix_max+"' and "+this.marque+"='"+nomproduit+"'";
+        Cursor res=db.rawQuery(req,null);
+        return res;
+
+
+    }
+
+
 }
