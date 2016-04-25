@@ -11,6 +11,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="tn.iit.e_shopping.Activity.AjouterProduit"
     tools:showIn="@layout/activity_ajouter_produit">
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
     <EditText
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -43,15 +44,108 @@
         android:hint="prix"
         android:layout_marginBottom="30dp"
         android:layout_alignEnd="@+id/editText9" />
+=======
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dip"
+            android:text="Ajouter un produit"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#DC143C"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom produit:"
+            android:textColor="#0000FF"
+            android:textStyle="italic"
+            />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/et_nomproduit" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Caractéristique produit :"
+            android:textColor="#0000FF"
+            android:textStyle="italic"
+            />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/et_caracte"
+         />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Prix produit :"
+            android:textColor="#0000FF"
+            android:textStyle="italic"
+            />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/et_prix"
+
+        android:layout_alignParentStart="true"
+       />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Catégorie produit :"
+            android:textColor="#0000FF"
+            android:textStyle="italic"
+            />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/et_categorie"
+
+            android:layout_alignParentStart="true"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Adresse produit :"
+            android:textColor="#0000FF"
+            android:textStyle="italic"
+            />
+
+
+
+>>>>>>> 4eme commit
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinner"
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
         android:layout_below="@+id/txt_prix"
+=======
+        android:layout_below="@+id/et_categorie"
+>>>>>>> 4eme commit
         android:layout_alignParentStart="true" />
 
 
 
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
 
     <EditText
         android:layout_width="wrap_content"
@@ -63,18 +157,29 @@
         android:layout_alignParentStart="true"
         android:layout_alignEnd="@+id/editText9" />
 
+=======
+>>>>>>> 4eme commit
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="prendre une photo "
         android:id="@+id/photo"
         android:layout_below="@+id/categorie"
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
         android:layout_alignParentStart="true" />
+=======
+        android:layout_alignParentStart="true"
+        android:textColor="#0000FF"/>
+>>>>>>> 4eme commit
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ajouter"
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
+=======
+
+>>>>>>> 4eme commit
         android:id="@+id/bt_ajouter"
         android:layout_below="@+id/photo"
         android:layout_alignParentStart="true" />
@@ -86,5 +191,10 @@
         android:layout_above="@+id/categorie"
         android:layout_centerHorizontal="true" />
 
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
 
+=======
+    </LinearLayout>
+    </ScrollView>
+>>>>>>> 4eme commit
 </RelativeLayout>

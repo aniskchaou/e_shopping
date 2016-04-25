@@ -36,7 +36,11 @@ public class InsertData extends AsyncTask<String,Void,String> {
 
         String par[]=texte.split("/");
 
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
         String url="http://10.0.2.2/eshoping/insert.php";
+=======
+        String url="http://10.0.3.2/eshoping/insert.php";
+>>>>>>> 4eme commit
         try {
             URL url_bj=new URL(url);
             HttpURLConnection htp= (HttpURLConnection) url_bj.openConnection();

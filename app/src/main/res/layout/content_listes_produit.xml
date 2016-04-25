@@ -7,11 +7,31 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="tn.iit.e_shopping.Activity.ListesProduit"
     tools:showIn="@layout/activity_listes_produit">
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
 
+=======
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="10dip"
+        android:text="Liste des produits"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#DC143C"
+        android:id="@+id/tx_titre"
+        />
+>>>>>>> 4eme commit
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@android:id/list"
         android:layout_alignParentTop="true"
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
         android:layout_centerHorizontal="true" />
+=======
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+>>>>>>> 4eme commit
 </RelativeLayout>

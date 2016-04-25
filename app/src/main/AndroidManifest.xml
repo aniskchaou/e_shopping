@@ -14,7 +14,11 @@
 
     <application
         android:allowBackup="true"
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
         android:icon="@mipmap/ic_launcher"
+=======
+        android:icon="@mipmap/ic_launcher1"
+>>>>>>> 4eme commit
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">

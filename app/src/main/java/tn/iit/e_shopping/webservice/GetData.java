@@ -33,7 +33,11 @@ public class GetData extends AsyncTask<Void,Void,String> {
     }
 
     String jsonstring = null;
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
     String url = "http://10.0.2.2/eshoping/select.php";
+=======
+    String url = "http://10.0.3.2/eshoping/select.php";
+>>>>>>> 4eme commit
     TextView v;
     StringBuilder sb = null;
 
@@ -44,7 +48,11 @@ public class GetData extends AsyncTask<Void,Void,String> {
 
     @Override
     protected void onPostExecute(String aVoid) {
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
         Toast.makeText(c, sb.toString(), Toast.LENGTH_LONG).show();
+=======
+        Toast.makeText(c, "Remplissage de liste avec succes", Toast.LENGTH_LONG).show();
+>>>>>>> 4eme commit
     }
 
     @Override

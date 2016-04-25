@@ -39,7 +39,11 @@ public class Inscription extends AppCompatActivity  implements View.OnClickListe
         email= (EditText) findViewById(R.id.txt_ins_email);
         login= (EditText) findViewById(R.id.txt_ins_login);
         pwd= (EditText) findViewById(R.id.txt_ins_pwd);
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
         inscription= (Button) findViewById(R.id.bt_ins_ins);
+=======
+        inscription= (Button) findViewById(R.id.bt_Register);
+>>>>>>> 4eme commit
         inscription.setOnClickListener(this);
         duh=new DataBaseUserHelper(this);
     }

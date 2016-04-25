@@ -51,8 +51,13 @@ public class AjouterProduit extends AppCompatActivity {
         setContentView(R.layout.activity_ajouter_produit);
         bg= (ProgressBar) findViewById(R.id.progress_ajouter);
         dbh=new DataBaseHelper(this);
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
         marque= (EditText) findViewById(R.id.txt_marque);
         prix=(EditText)findViewById(R.id.txt_prix);
+=======
+        marque= (EditText) findViewById(R.id.et_nomproduit);
+        prix=(EditText)findViewById(R.id.et_prix);
+>>>>>>> 4eme commit
         adresse=(Spinner) findViewById(R.id.spinner);
         List<String> list = new ArrayList<String>();
         list.add("monoprix");
@@ -69,8 +74,13 @@ public class AjouterProduit extends AppCompatActivity {
 
 
 
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
         categorie=(EditText)findViewById(R.id.categorie);
         carateristique=(EditText)findViewById(R.id.txt_caracterisque);
+=======
+        categorie=(EditText)findViewById(R.id.et_categorie);
+        carateristique=(EditText)findViewById(R.id.et_caracte);
+>>>>>>> 4eme commit
         ajouter =(Button)findViewById(R.id.bt_ajouter);
         photo= (Switch) findViewById(R.id.photo);
         photo.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

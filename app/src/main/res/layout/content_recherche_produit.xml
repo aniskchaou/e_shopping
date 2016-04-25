@@ -11,6 +11,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="tn.iit.e_shopping.Activity.RechercheProduit"
     tools:showIn="@layout/activity_recherche_produit">
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,6 +36,81 @@
         android:id="@+id/seek_max"
         android:layout_marginBottom="30dp"
         android:layout_below="@id/seek_min" />
+=======
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dip"
+        android:text="Recherche un produit"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#DC143C"
+        />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom produit:"
+            android:textColor="#0000FF"
+            android:textStyle="italic"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_recherche"
+
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Prix maximale:"
+            android:textColor="#0000FF"
+            android:textStyle="italic"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginTop="20dp"
+            android:id="@+id/txt_prix_maxiamale_value"
+            android:layout_alignParentStart="true" />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seek_max"
+            android:layout_marginBottom="30dp"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Prix minimale:"
+            android:textColor="#0000FF"
+            android:textStyle="italic"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/txt_prix_minimale_value"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentStart="true" />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seek_min"
+ />
+
+
+>>>>>>> 4eme commit
 
     <Button
         android:layout_width="match_parent"
@@ -42,6 +118,7 @@
         android:text="recherche"
         android:layout_marginBottom="30dp"
         android:id="@+id/bt_rechercher"
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
         android:layout_below="@id/seek_max"
          />
 
@@ -61,4 +138,13 @@
         android:layout_above="@+id/seek_max"
         android:layout_alignParentStart="true" />
 
+=======
+        android:layout_marginTop="10dp"
+         />
+
+
+
+
+    </LinearLayout>
+>>>>>>> 4eme commit
 </RelativeLayout>

@@ -15,5 +15,9 @@
     Once you have your key (it starts with "AIza"), replace the "google_maps_key"
     string in this file.
     -->
+<<<<<<< ec700dd9cfc4895636f662f8c6c2f90c50b3d536
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCm27YOjay7D-vxM5-0FfJMuoCCSSf7sT8</string>
+=======
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAF1ttjvr4ElLxlr0s1UJ2nVSCsiZUZrJI</string>
+>>>>>>> 4eme commit
 </resources>
